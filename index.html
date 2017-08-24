@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Commerce</title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato|Zilla+Slab" rel="stylesheet"> 
+</head>
+<body>
+   
+	<div class="breadcrumb">
+    <div class="row">
+    <div class="col-sm-6">
+    <div class="row pull-left" style="margin-top: 10px; margin-left: 100px;">
+	    <span class="col-sm-6" style="float: left;">
+          <a class="col-sm-2" href="www.facebook.com"><i class="fa fa-facebook black"></i></a>
+          <p class="col-sm-10"> Like us on Facebook </p> 
+        </span>
+        <span class="col-sm-6" style="float: left;">
+          <a class="col-sm-2" href="www.twitter.com"><i class="fa fa-twitter black"></i></a>
+          <p class="col-sm-10"> Follow us on Twitter </p> 
+        </span>
+    </div>
+    </div>
+
+    <div class="col-sm-6">
+    <ul class="breadcrumb pull-right" id="list">
+      <li><a href="#delivery">Delivery</a></li>
+      <li><a href="#payment">Payment</a></li>
+      <li><a href="#faq" id="ser">FAQ</a></li>
+      <li><a href="#help">Help Center</a></li>
+    </ul>
+    
+    </div>
+    </div>
+
+	</div>
+
+
+<!-- -->
+<section class="container-fluid" style="padding: 25px;">
+	<div class="row">
+		<div class="col-sm-2" style="margin-bottom: 20px; padding-left: 140px;">
+		   <div class="rectangle"></div>
+		</div>
+
+		<div class="col-sm-6" style="margin-bottom: 20px; padding-left: 140px;">
+		  <div class="input-group input-group-lg">
+           <span class="btn-group input-group-addon">
+           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All <span class="caret" style="margin-left: 30px; margin-right: -13px;"></span>
+           </button>
+           <ul class="dropdown-menu">
+             <li><a href="#delivery">Delivery</a></li>
+             <li><a href="#payment">Payment</a></li>
+             <li><a href="faq">FAQ</a></li>
+             <li><a href="#help">Help center</a></li>
+           </ul>
+           </span>
+           <input type="text" class="form-control" placeholder="Search" aria-describedby="sizing-addon3">
+           <span class="input-group-btn">
+           <button class="btn btn-default btn-group" type="button" style="background-color: green; color: white;">
+              <span class="glyphicon glyphicon-search"></span>
+           </button>
+           </span>
+          </div>
+		</div>
+
+		<div class="col-sm-4" style="padding-top: 3px; padding-left: 140px;">
+		       <button class="btn cartbutton" type="button" data-toggle="modal" data-target="#ordine">
+              <span class="glyphicon glyphicon-user" style="padding-right: 20px;"></span><a href="#" data-toggle="modal" href="#loginModal"style="color:#fff">Sign in</a>
+           </button>
+           <button class="btn cartbutton" type="button">
+              <span class="glyphicon glyphicon-shopping-cart" style="padding-right: 20px;"></span> Your cart
+           </button>
+
+
+            
+          <!-- Modal -->
+           
+                <div id="ordine" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                <div class="modal-content paste-mo">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title" style="color:#a200a0">MEMBER LOGIN AREA</h4>
+                </div>
+                <div class="modal-body">
+                  <p><input type="text" class="input-register" placeholder="Username or Email" required></p>
+                  <p><input type="text" class="input-register" placeholder="Password" required></p>
+                  <p style="margin-left: 173px; margin-top: -20px;"><a href="#">Forget password</a></p>
+                </div>
+                <div class="modal-footer paste-mo bottom-border">
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+                <div class="footer-account">
+                  <p>Dont have an account?<span data-toggle="modal" data-dismiss="modal" data-target="#squarespaceModal" style="color:#9c27b0"><a href="#"> Register</span></p>
+                </div>
+
+
+
+        <!-- Register -->
+        <button class="btn suggestion"  data-toggle="modal" data-target="#squarespaceModal" >
+          <a href="#" style="color:#fff">REGISTER</a>
+         </button>
+         <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+        <div class="modal-content paste-mo">
+         <div class="modal-header reg-sec">
+          <h4 class="modal-title" id="lineModalLabel" style="color:#8a0088">REGISTER WITH US </h4>
+         </div>
+
+         <div class="modal-body">
+          <form class="pure-form">
+              <fieldset>
+                  <input type="text" placeholder="Full Name" class="input-register" required><br>
+                  <input type="text" placeholder="Last Name" class="input-register" required><br>
+                  <input type="text" placeholder="Email" class="input-register" required><br>
+                  <input type="password" class="input-register" placeholder="Password" id="password" required><br>
+                  <input type="password" class="input-register" placeholder="Confirm Password" id="confirm_password" required><br>
+
+                  <button type="submit" class="pure-button btn btn-primary">Register</button>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" role="button">Close</button>
+                  </div>
+                    <p data-toggle="modal" data-target="#ordine" data-dismiss="modal" >Already have an account <a href="#"  data-toggle="modal"
+            href="#loginModal">Login</a></p>
+        
+              </fieldset>
+          </form>
+         </div>
+        </div>
+          </div>
+         </div>
+
+
+
+          <!--
+          <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog" style="width: 400px;">-->
+               <!-- Modal content-->
+                <!--<div class="modal-content" id = "one">-->
+                <!-- modal header -->
+                 <!-- <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title text-center">LOG IN</h4>
+                  </div>
+                  <div class="div-forms">
+                  <form id="login-form">-->
+                  <!-- modal body -->
+                     <!--<div class="modal-body">
+                        <div id="div-login-msg" style="margin-bottom: 20px;">
+                        <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                        <span id="text-login-msg"> Type your username and password </span>  
+                        </div>
+                        <input id="login_username" class="form-control" type="text" placeholder="Username" required style="margin-bottom: 20px;">
+                        <input id="login_password" class="form-control" type="password" placeholder="Password" required style="margin-bottom: 20px;">
+                        <div class="checkbox">
+                          <label>
+                          <input type="checkbox"> Remember me
+                          </label>
+                        </div>
+                     </div>-->
+                  <!-- modal footer -->
+                      <!--<div class="modal-footer">
+                        <div>
+                          <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                        </div>
+                        <div style="margin-left: -13px;">
+                        <button id="login_lost_btn" type="button" class="btn btn-link" data-toggle="modal" data-target="#myModalOne">Lost Password?</button>
+                          <button id="register_btn" type="button" class="btn btn-link" data-toggle="modal" data-target="myModalTwo">Register</button>
+                        </div>
+                      </div>
+                  </form>
+                  </div>
+                  </div>
+                  </div>-->
+                  <!-- end of login form -->
+
+                  <!-- Lost password form -->
+                  <!--<div class="modal fade" id="myModalOne" role="dialog">
+                  <div class="modal-dialog" style="width: 400px;">-->
+                  <!-- Modal content-->
+                 <!-- <div class="modal-content">-->
+                  <!-- modal header -->
+                  <!--<div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title text-center">RETRIEVE PASSWORD</h4>
+                  </div>
+                  <form id="lost-password">-->
+                  <!-- modal body -->
+                     <!--<div class="modal-body">
+                        <div id="div-lost-msg" style="margin-bottom: 20px;">
+                        <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                        <span id="text-lost-msg">Type your e-mail.</span>
+                        </div>
+                        <input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+                      </div>-->
+                  <!-- modal footer -->
+                      <!--<div class="modal-footer">
+                        <div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                        </div>
+                        <div style="margin-left: -13px;">
+                          <button id="login_btn" type="button" class="btn btn-link">Log In</button>
+                          <button id="register_btn" type="button" class="btn btn-link">Register</button>
+                        </div>
+                      </div>                    
+                  </form>
+                  </div>
+                  </div>
+                  </div>-->
+                  <!-- end of lost password form -->
+
+                  <!-- Register form -->
+                  <!--<div class="modal fade" id="myModalTwo" role="dialog">
+                  <div class="modal-dialog" style="width: 400px;">-->
+                  <!-- Modal content-->
+                  <!--<div class="modal-content">-->
+                  <!-- modal header -->
+                  <!--<div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title text-center">REGISTER AN ACCOUNT</h4>
+                  </div>
+                  <form id="register-form">-->
+                  <!-- modal body-->
+                    <!--<div class="modal-body">
+                      <div id="div-register-msg" style="margin-bottom: 20px;">
+                        <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                        <span id="text-register-msg">Register an account.</span>
+                      </div>
+                      <input id="register_username" class="form-control" type="text" placeholder="Username" required style="margin-bottom: 20px;">
+                      <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required style="margin-bottom: 20px;">
+                      <input id="register_password" class="form-control" type="password" placeholder="Password" required style="margin-bottom: 20px;">
+                      <input id="register_password" class="form-control" type="password" placeholder="Confirm password" required>
+                    </div>-->
+                  <!-- modal footer -->
+                    <!--<div class="modal-footer">
+                      <div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                      </div>
+                      <div style="margin-left: -13px;">
+                        <button id="login_btn" type="button" class="btn btn-link">Log In</button>
+                        <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                      </div>
+                    </div>                      
+                  </form>
+                  </div>
+                  </div>
+                  </div>-->
+                  <!-- end of register form -->
+
+
+
+                  
+
+           </div>
+		</div>
+	</div>
+</section>
+
+<!-- Navigation -->
+
+ <nav class="navbar navbar-inverse bold" style="border-radius: 0px!important; background-color: #000;">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav" style="padding-left: 120px;">
+      <li class="dropdown right colorwhite">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;">DEPARTMENTS
+        <span class="caret green"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Clothes</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Movies</a></li>
+        </ul>
+      </li>
+      <li class="dropdown right colorwhite">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;">MAGIC
+        <span class="caret green"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Clothes</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Movies</a></li>
+        </ul>
+      </li>
+      <li class="dropdown right colorwhite">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;">YUGIOH
+        <span class="caret green"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Clothes</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Movies</a></li>
+        </ul>
+      </li>
+      <li class="dropdown right colorwhite">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;">CARDFIGHT
+        <span class="caret green"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Clothes</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Movies</a></li>
+        </ul>
+      </li>
+      <li class="dropdown right colorwhite">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;">FORCE OF WILL
+        <span class="caret green"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Clothes</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Movies</a></li>
+        </ul>
+      </li>
+      <li class="dropdown right colorwhite">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;">POKEMON
+        <span class="caret green"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Clothes</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Movies</a></li>
+        </ul>
+      </li>
+      <li class="right"><a href="#" style="color: blue;">PRICE GUIDE</a></li>
+      <li class="right"><a href="#" style="color: orange;">PRICE WALL EVENTS</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+<!-- Carousel-->
+<div id="myCarousel" class="carousel slide hidden-sm hidden-xs" data-ride="carousel" style="margin-top: -20px;">
+  <!-- Indicators -->
+  <ol class="carousel-indicators" style="padding-right: 500px;">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/imageone.jpg" alt="firstitem" style="width: 100%;">
+      <div class="carousel-caption caroucap">
+      <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-8">
+       <div style="text-align: left; margin-left: -25px;">
+        <h3 class="caphead">MAGIC</h3>
+        <p class="bold">OATH OF THE GATEWATCH:</p>
+        <p class="bold"> SNEAK PEAK. </p>
+        <p style="margin-bottom: -3px;"> The Daily Magic Update is a roundup of everything </p>
+        <p> you should know from this upcoming set.</p>
+        <button type="submit" class="btn" style="background-color: #fff; color: #000;"> Shop </button>
+       </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+
+
+    <div class="item">
+      <img src="images/imagetwo.jpg" alt="seconditem" style="width: 100%;">
+      <div class="carousel-caption caroucap">
+      <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-8">
+       <div style="text-align: left; margin-left: -25px;">
+        <h3 class="caphead">MAGIC</h3>
+        <p class="bold">OATH OF THE GATEWATCH:</p>
+        <p class="bold"> SNEAK PEAK. </p>
+        <p style="margin-bottom: -3px;"> The Daily Magic Update is a roundup of everything </p>
+        <p> you should know from this upcoming set.</p>
+        <button type="submit" class="btn" style="background-color: #fff; color: #000;"> Shop </button>
+       </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/imagethree.jpg" alt="third item" style="width: 100%;">
+      <div class="carousel-caption caroucap">
+      <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-8">
+       <div style="text-align: left; margin-left: -25px;">
+        <h3 class="caphead">MAGIC</h3>
+        <p class="bold">OATH OF THE GATEWATCH:</p>
+        <p class="bold"> SNEAK PEAK. </p>
+        <p style="margin-bottom: -3px;"> The Daily Magic Update is a roundup of everything </p>
+        <p> you should know from this upcoming set.</p>
+        <button type="submit" class="btn" style="background-color: #fff; color: #000;"> Shop </button>
+       </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control hidden" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control hidden" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<!-- list -->
+<div class="container-fluid" id="viewedlist">
+    <div class="row" style="border: 1px solid transparent; padding-left: 5px;">
+       <h5 class="col-sm-11"> Related to items you've viewed </h5>
+       <span class="col-sm-1" style="margin-top: 10px;"><a> See all </a></span>
+    </div>
+
+    <!-- viewed list -->
+    <div class="row">
+       <div class="col-sm-12">
+       	   <div class="row" >
+       	      <div class="col-sm-3 viewed">
+       	      <div class="space">
+       	          <div class="row">
+       	          	  <div class="col-sm-3">
+       	          	  	 <img src="images/viewedimage.jpg" alt="viewed">
+       	          	  </div>
+       	          	  <div class="col-sm-9">
+       	          	    <p class="down"><a> Oblivion Sower(Foil) </a></p>
+       	          	  	<p class="down"> Battle for Zendika </p>
+       	          	  	<p class="down"> $21.99 - $16.59  $14.01 </p>
+       	          	  </div>
+       	          </div>
+       	      </div>
+              </div>
+
+              <div class="col-sm-3 viewed">
+              <div class="space">
+                  <div class="row">
+       	          	  <div class="col-sm-3">
+       	          	  	 <img src="images/viewedimage.jpg" alt="viewed">
+       	          	  </div>
+       	          	  <div class="col-sm-9">
+       	          	    <p class="down"><a> Bright Herder </a></p>
+       	          	  	<p class="down"> Oath of the Gatewatch </p>
+       	          	  	<p class="down"> $21.99 - $16.59 </p>
+       	          	  </div>
+       	          </div>
+       	      </div>
+       	      </div>  
+
+              <div class="col-sm-3 viewed">
+              <div class="space">
+       	          <div class="row">
+       	          	  <div class="col-sm-3">
+       	          	  	 <img src="images/viewedimage.jpg" alt="viewed">
+       	          	  </div>
+       	          	  <div class="col-sm-9">
+       	          	    <p class="down"><a> Conduit of Ruin (Foil) </a></p>
+       	          	  	<p class="down"> Battle for Zendika </p>
+       	          	  	<p class="down"> $21.99 - $16.59 </p>
+       	          	  </div>
+       	          </div>
+       	      </div>
+              </div> 
+
+              <div class="col-sm-3 viewed">
+              <div class="space">
+       	          <div class="row">
+       	          	  <div class="col-sm-3">
+       	          	  	 <img src="images/viewedimage.jpg" alt="viewed">
+       	          	  </div>
+       	          	  <div class="col-sm-9">
+       	          	    <p class="down"><a> Aberrant Researcher </a></p>
+       	          	  	<p class="down"> Shadows over Innistrad  </p>
+       	          	  	<p class="down"> $21.99 - $16.59 </p>
+       	          	  </div>
+       	          </div>
+              </div>       	         
+              </div>   	   	
+       	   </div>
+       </div>
+    </div>
+
+    <!-- editor's list -->
+
+    <div class="row" style="border: 1px solid transparent; padding-left: 5px;">
+       <h5 class="col-sm-11"> Editor's pick </h5>
+       <span class="col-sm-1" style="margin-top: 10px;"><a> See all </a></span>
+    </div>
+    <div class="row">
+    	<div class="col-sm-6 viewed">
+    	<div class="space">
+    		<div class="row">
+    			<div class="col-sm-6">
+    				<img src="images/viewedimage2.jpg" alt="image" style="width: 100%;">
+    			</div>
+    	        <div class="col-sm-6" style="padding-left: 60px;">
+
+    		    <div class="row">
+
+                <!-- first sentence -->
+                <div class="row">
+                    <h5><a> MAGIC </a></h5>
+                    <p style="font-weight: bold;"> Shadows Over Innistrad </p>
+                </div>
+
+    			<!-- first image -->
+    			<div class="row">
+       	            <div class="row" style="margin-bottom: 40px;">
+       	          	    <div class="col-sm-3">
+       	          	  	<img src="images/viewedimage.jpg" alt="viewed">
+       	          	    </div>
+       	          	    <div class="col-sm-9">
+       	          	    <p class="down"><a> Oblivion Sower(Foil) </a></p>
+       	          	  	<p class="down"> Battle for Zendika </p>
+       	          	  	<p class="down"> $21.99 - $16.59  $14.01 </p>
+       	          	    </div>
+       	          	</div>
+       	        </div>
+
+                <!-- second image -->
+       	        <div class="row">
+       	            <div class="row" style="margin-bottom: 40px;">
+       	          	    <div class="col-sm-3">
+       	          	    <img src="images/viewedimage.jpg" alt="viewed">
+       	          	    </div>
+       	          	    <div class="col-sm-9">
+       	          	    <p class="down"><a> Oblivion Sower(Foil) </a></p>
+       	          	  	<p class="down"> Battle for Zendika </p>
+       	          	  	<p class="down"> $21.99 - $16.59  $14.01 </p>
+       	          	    </div>
+       	            </div>
+       	        </div>
+
+       	        <div class="row">
+       	        	<button class="btn" style="margin-bottom: 40px;"> View more handpicked items</button>
+       	        </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    	</div>
+
+
+
+
+
+
+    	<div class="col-sm-6 viewed">
+    	<div class="space">
+    		<div class="row">
+    			<div class="col-sm-6">
+    				<img src="images/viewedimage2.jpg" alt="image" style="width: 100%;">
+    			</div>
+
+    			<div class="col-sm-6" style="padding-left: 60px;">
+
+    		    <div class="row">
+
+                <!-- first sentence -->
+                <div class="row">
+                    <h5><a> POKEMON </a></h5>
+                    <p style="font-weight: bold;"> Generations </p>
+                </div>
+
+    			<!-- first image -->
+    			<div class="row">
+       	            <div class="row" style="margin-bottom: 40px;">
+       	          	    <div class="col-sm-3">
+       	          	  	<img src="images/viewedimage.jpg" alt="viewed">
+       	          	    </div>
+       	          	    <div class="col-sm-9">
+       	          	    <p class="down"><a> Oblivion Sower(Foil) </a></p>
+       	          	  	<p class="down"> Battle for Zendika </p>
+       	          	  	<p class="down"> $21.99 - $16.59  $14.01 </p>
+       	          	    </div>
+       	          	</div>
+       	        </div>
+
+                <!-- second image -->
+       	        <div class="row">
+       	            <div class="row" style="margin-bottom: 40px;">
+       	          	    <div class="col-sm-3">
+       	          	    <img src="images/viewedimage.jpg" alt="viewed">
+       	          	    </div>
+       	          	    <div class="col-sm-9">
+       	          	    <p class="down"><a> Oblivion Sower(Foil) </a></p>
+       	          	  	<p class="down"> Battle for Zendika </p>
+       	          	  	<p class="down"> $21.99 - $16.59  $14.01 </p>
+       	          	    </div>
+       	            </div>
+       	        </div>
+
+       	        <div class="row">
+       	        	<button class="btn" style="margin-bottom: 40px;"> View more handpicked items</button>
+       	        </div>
+
+                </div>
+                </div>
+    		</div>
+    	</div>
+    </div>
+    </div>
+
+    <!-- Trending packs -->
+    <div class="row" style="border: 1px solid transparent; padding-left: 5px;">
+       <h5 class="col-sm-11"> Trending pack </h5>
+       <span class="col-sm-1" style="margin-top: 10px;"><a> This week </a></span>
+    </div>
+    <div class="row">
+        <!-- first one -->
+    	<div class="col-sm-3 text-center viewed">
+    	<div class="space">
+    	   <div class="row">
+    	       <img src="images/viewedimage4.jpg" alt="image" class="imagesize">
+    	   </div>
+    	   <div style="padding: 0px 15px 0px 15px;">
+    	     <div>
+    	       <h5><a> MAGIC </a></h5>
+    	     </div>
+    	     <div>
+    	       <p class="text_size" style="padding-bottom: 28px;"> Oath of the Gatewatch </p>
+    	     </div>
+    	    </div>
+    	   <div>
+    	       <button class="btn buttonstyle buttonwidth"> Buy Now </button>
+    	   </div>
+    	</div>
+    	</div>
+        <!-- second one -->
+    	<div class="col-sm-3 text-center viewed">
+    	<div class="space">
+    		<div class="row">
+    	       <img src="images/viewedimage4.jpg" alt="image" class="imagesize">
+    	   </div>
+    	   <div style="padding: 0px 15px 0px 15px;">
+    	     <div>
+    	       <h5><a> MAGIC </a></h5>
+    	     </div>
+    	     <div>
+    	       <p class="text_size" style="padding-bottom: 28px;"> Blattle for Zendikar </p>
+    	     </div>
+    	   </div>
+    	   <div>
+    	       <button class="btn buttonstyle buttonwidth"> Buy Now </button>
+    	   </div>
+    	</div>
+    	</div>
+    	<!-- third one -->
+    	<div class="col-sm-3 text-center viewed">
+    	<div class="space">
+    		<div class="row">
+    	       <img src="images/viewedimage4.jpg" alt="image" class="imagesize">
+    	   </div>
+    	   <div style="padding: 0px 15px 0px 15px;">
+    	     <div>
+    	       <h5><a> CARDFIGHT </a></h5>
+    	     </div>
+    	     <div>
+    	       <p class="text_size"> Transcension of Blade and Blossom </p>
+    	     </div>
+    	    </div>
+    	   <div>
+    	       <button class="btn buttonstyle buttonwidth"> Buy Now </button>
+    	   </div>
+    	</div>
+    	</div>
+    	<!-- fourth one -->
+    	<div class="col-sm-3 text-center viewed">
+    	<div class="space">
+    		<div class="row">
+    	       <img src="images/viewedimage4.jpg" alt="image" class="imagesize">
+    	   </div>
+    	   <div style="padding: 0px 15px 0px 15px;">
+    	     <div>
+    	       <h5><a> POKEMON </a></h5>
+    	     </div>
+    	     <div>
+    	       <p class="text_size"> Generations: Mythical Collections </p>
+    	     </div>
+    	   </div>
+    	   <div>
+    	       <button class="btn buttonstyle buttonwidth"> Buy Now </button>
+    	   </div>
+    	</div>
+    </div>
+    </div>
+
+    <div><br></div>
+
+    <!-- Second trending packs -->
+    <div class="row">
+        <!-- first one -->
+    	<div class="col-sm-3 text-center viewed">
+    	<div class="space">
+    	   <div class="row">
+    	       <img src="images/viewedimage4.jpg" alt="image" class="imagesize">
+    	   </div>
+    	   <div style="padding: 0px 15px 0px 15px;">
+    	     <div>
+    	       <h5><a> MAGIC </a></h5>
+    	     </div>
+    	     <div>
+    	       <p class="text_size" style="padding-bottom: 28px;"> Oath of the Gatewatch </p>
+    	     </div>
+    	    </div>
+    	   <div>
+    	       <button class="btn buttonstyle buttonwidth"> Buy Now </button>
+    	   </div>
+    	</div>
+    	</div>
+        <!-- second one -->
+    	<div class="col-sm-3 text-center viewed">
+    	<div class="space">
+    		<div class="row">
+    	       <img src="images/viewedimage4.jpg" alt="image" class="imagesize">
+    	   </div>
+    	   <div style="padding: 0px 15px 0px 15px;">
+    	     <div>
+    	       <h5><a> MAGIC </a></h5>
+    	     </div>
+    	     <div>
+    	       <p class="text_size" style="padding-bottom: 28px;"> Battle for Zendikar </p>
+    	     </div>
+    	    </div>
+    	   <div>
+    	       <button class="btn buttonstyle buttonwidth"> Buy Now </button>
+    	   </div>
+    	</div>
+    	</div>
+    	<!-- third one -->
+    	<div class="col-sm-3 text-center viewed">
+    	<div class="space">
+    		<div class="row">
+    	       <img src="images/viewedimage4.jpg" alt="image" class="imagesize">
+    	   </div>
+    	   <div style="padding: 0px 15px 0px 15px;">
+    	     <div>
+    	       <h5><a> CARDFIGHT </a></h5>
+    	     </div>
+    	     <div>
+    	       <p class="text_size"> Generations: Mythical Collections </p>
+    	     </div>
+    	    </div>
+    	   <div>
+    	       <button class="btn buttonstyle buttonwidth"> Buy Now </button>
+    	   </div>
+    	</div>
+    	</div>
+    	<!-- fourth one -->
+    	<div class="col-sm-3 text-center viewed">
+    	<div class="space">
+    		<div class="row">
+    	       <img src="images/viewedimage4.jpg" alt="image" class="imagesize">
+    	   </div>
+    	   <div style="padding: 0px 15px 0px 15px;">
+    	     <div>
+    	       <h5><a> POKEMON </a></h5>
+    	     </div>
+    	     <div>
+    	       <p class="text_size">Transcension of Blade and Blossom  </p>
+    	     </div>
+    	   </div>
+    	   <div>
+    	       <button class="btn buttonstyle buttonwidth"> Buy Now </button>
+    	   </div>
+    	</div>
+    	</div>
+
+    
+
+    <!-- Upcoming Events -->
+
+    <div class="row" style="border: 1px solid transparent; padding-left: 20px;">
+       <h5 class="col-sm-11"> Upcoming Events </h5>
+       <span class="col-sm-1" style="margin-top: 10px;"><a> This month </a></span>
+    </div>
+    <div class="container-fluid">
+    <div class="row">
+        <!-- first event -->
+    	<div class="col-sm-3 viewed">
+    	<div class="space">
+    		<div class="row">
+    			<div class="col-sm-3 text-center">
+    			<div style="padding: 10px 0px 50px 0px; background-color: #fbfcfc;">
+    				<h5> APR </h5>
+    				<p style="font-weight: bold; font-size: 1.5em;"> 9 </p>
+    			</div>
+    			</div>
+
+    			<div class="col-sm-9" style="padding-left: 40px;">
+    				<h5 style="font-weight: bold;"> ARG Circuit Series </h5>
+    				<div>
+    					<p style="margin-bottom: -5px;"> Kentucky International </p>
+    					<p> Convention Center <p>
+    				</div> 
+    				<div>
+    					<p style="margin-bottom: -5px;"> 221 Fourth Street </p>
+    					<p> Loisville, KY 40202 </p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	</div>
+    	<!-- second event -->
+    	<div class="col-sm-3 viewed">
+    	<div class="space">
+    		<div class="row">
+    		
+    			<div class="col-sm-3 text-center">
+    			<div style="padding: 10px 0px 50px 0px; background-color: #fbfcfc;">
+    				<h5> APR </h5>
+    				<p style="font-weight: bold; font-size: 1.5em;"> 11 </p>
+    			</div>
+    		    </div>
+    			<div class="col-sm-9" style="padding-left: 40px;">
+    				<h5 style="font-weight: bold;"> Game Planet </h5>
+    				<div>
+    					<p style="margin-bottom: -5px;"> Kentucky International </p>
+    					<p> Convention Center <p>
+    				</div> 
+    				<div>
+    					<p style="margin-bottom: -5px;"> 221 Fourth Street </p>
+    					<p> Loisville, KY 40202 </p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	</div>
+    	<!-- third event -->
+    	<div class="col-sm-3 viewed">
+    	<div class="space">
+    		<div class="row">
+    			<div class="col-sm-3 text-center">
+    			<div style="padding: 10px 0px 50px 0px; background-color: #fbfcfc;">
+    				<h5> APR </h5>
+    				<p style="font-weight: bold; font-size: 1.5em;"> 16 </p>
+    			</div>
+    			</div>
+    			<div class="col-sm-9" style="padding-left: 40px;">
+    				<h5 style="font-weight: bold;"> Capital C. Game E. </h5>
+    				<div>
+    					<p style="margin-bottom: -5px;"> Kentucky International </p>
+    					<p> Convention Center <p>
+    				</div> 
+    				<div>
+    					<p style="margin-bottom: -5px;"> 221 Fourth Street </p>
+    					<p> Loisville, KY 40202 </p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	</div>
+    	<!-- fourth event -->
+    	<div class="col-sm-3 viewed">
+    	<div class="space">
+    		<div class="row">
+    			<div class="col-sm-3 text-center">
+    			<div style="padding: 10px 0px 50px 0px; background-color: #fbfcfc;">
+    				<h5> APR </h5>
+    				<p style="font-weight: bold; font-size: 1.5em;"> 23 </p>
+    			</div>
+    			</div>
+    			<div class="col-sm-9" style="padding-left: 40px;">
+    				<h5 style="font-weight: bold;"> Tyler's CCGs </h5>
+    				<div>
+    					<p style="margin-bottom: -5px;"> Kentucky International </p>
+    					<p> Convention Center <p>
+    				</div> 
+    				<div>
+    					<p style="margin-bottom: -5px;"> 221 Fourth Street </p>
+    					<p> Loisville, KY 40202 </p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	</div>
+    </div>
+    <br>
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid text-center" style="background-color: #2471a3; color: #fff; padding: 20px;">
+    <div class="row">
+    <div class="col-sm-5">
+	   <p style="font-size: 1.5em;"> Get the latest news, offers and more.</p>
+	</div>
+	<div class="col-sm-7">
+	   <form class="form-inline">
+          <div class="form-group input-group" style="padding-right: 10px;">
+          <input type="text" class="form-control" size="40" id="emailaddress" placeholder="Enter your mail" style="border-radius: 4px;">
+          </div>
+          <button type="submit" class="btn" id="request" style="color: #000;">Sign Up</button>
+        </form>
+	</div>
+	</div>
+</div>
+
+
+<!-- footer -->
+<footer class="container-fluid" style="color: #566573; font-size: 13px;">
+<div class="row">
+	<div class="col-sm-3" style="padding: 30px 15px 30px 80px; border-right: 1px solid gray;">
+	  <div class="col-sm-12">
+	     <p style="color: #d7dbdd;" class="bold"> SHOP </p>
+	  	 <p> Yugioh </p>
+	  	 <p> Magic </p>
+	  	 <p> Cardfight Vanguard </p>
+	  	 <p> Pokemon</p>
+	  	 <p> Force of will </p>
+	  	 <p> Weiss Schwarz </p>
+	  	 <p> Dice Masters </p>
+	  	 <p> Heroclix </p>
+	  	 <p> WOW TCG </p>
+	  	 <p> Board Games </p>
+	  	 <p> Supplies </p>
+	  </div>
+	</div>
+	
+
+   
+	<div class="col-sm-6" style="padding: 30px 60px 30px 15px; border-right: 1px solid gray;">
+	
+    <div class="col-sm-4">
+	  <div>
+	    <p style="color: #d7dbdd;" class="bold"> EVENTS </p>
+	  	<p> Price Wall </p>
+	    <p> Heroclix ROC Series </p>
+	  </div>
+	  	
+	  <div style="padding-top: 60px;">
+	  	   <p style="color: #d7dbdd;" class="bold"> ARTICLES & DECKS</p>
+	  	   <p> Magic Homepage </p>
+	  	   <p> Dragon Ball Z Homepage </p>
+	  	   <p> Pokemon Homepage </p>
+	  	   <p> Cardfight Homepage </p>
+	  	   <p> Force of Will Homepage </p>
+	  	   <p> Yugioh Homepage </p>
+	  </div>
+	</div>
+
+
+	<div class="col-sm-4">
+	   <div>
+	   <p style="color: #d7dbdd;" class="bold"> BUY WITH US </p>
+	   <p> Buyer Safeguard </p>
+	   <p> Gift Cards </p>
+	   <p> Card Optimizer </p>
+	   <p> Mass Entry </p>
+	   <p> Collection Tracker </p>
+	   </div>
+
+
+	   <div style="padding-top: 60px;">
+	   <p style="color: #d7dbdd;" class="bold"> SELL WITH US </p>
+	   <p> Sell With Trading </p>
+	   <p> Price Data API's </p>
+	   <p> Trading Direct </p>	
+	   </div>
+	  	
+	</div>
+	
+	<div class="col-sm-4">
+	  	<div>
+	  		<p style="color: #d7dbdd;" class="bold"> ABOUT US </p>
+	  		<p> Our Core Values </p>
+	  		<p> Working at TCGPlayer </p>
+	  		<p> Working at Syracuse </p>
+	  		<p> Careers </p>
+	  		<p> In The News </p>
+	  		<p> Press Center </p>
+	  		<p> In The Community </p>
+	  		<p> Contact Us </p>
+	  	</div>
+	</div>
+
+	</div>
+
+
+
+	<div class="col-sm-3" style="padding: 30px 80px 30px 30px;">
+        <div>
+			<p style="color: #d7dbdd;" class="bold"> SOCIAL </p>
+			<p>
+              <a href="www.facebook.com">
+              <i class="fa fa-facebook black"></i>
+              </a>
+              <span> Like us on Facebook </span> 
+            </p>
+            <p>
+              <a href="www.twitter.com">
+              <i class="fa fa-twitter black"></i>
+              </a>
+              <span> Like us on Twitter </span> 
+            </p>
+		</div>
+		<!--"-->
+		<div style="padding-top: 60px;">
+			<p style="color: #d7dbdd;" class="bold"> HOW CAN WE HELP? </p>
+			<p>
+              <a href="www.facebook.com"><i class="fa fa-facebook black"></i></a>
+              <span style="font-weight: bold;"> Customer Service </span> 
+            </p>
+            <p> Help Center </p>
+            <p> Leave Us Feedback </p>
+		</div>
+	</div>
+</div>
+
+<hr style="margin-top: 0px !important;" />
+<p class="text-center"> All original content herein Copyright Ascension Gaming Network. No portion of this website may be used without expressed written content</p>
+<p class="text-center"> All rights reserved. Magic the Gathering and its respective properties are copyright Wizard of the Coast.</p> 
+</footer>
+
+
+        
+      
+
+  <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

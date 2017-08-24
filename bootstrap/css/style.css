@@ -1,0 +1,136 @@
+body{
+	font-family: 'Lato', sans-serif;
+}
+.black{
+	color: #000; 
+}
+.breadcrumb > li + li::before{
+	color: transparent;
+}
+
+.white{
+	background-color: #fff;
+}
+
+.rectangle{
+	border: 1px solid #d7dbdd;
+	width: 200px;
+	height: 50px;
+	background-color: #d7dbdd;
+}
+.input-group-addon{
+	padding: 5px 12px;
+}
+.input-group-addon, .input-group-lg > .input-group-btn > .btn {
+	padding: 4px 16px !important;
+}
+.btn-default{
+	background-color: transparent;
+	border-color: transparent;
+}
+.cartbutton{
+	height: 45px; 
+	border-color: 
+	gray; margin: -2px; 
+	padding: 13px;
+}
+.bold{
+	font-weight: bold;
+}
+.green{
+	color: #32CD32;
+}
+.colorwhite:hover{
+	background-color: #0f0;
+	color: #fff;
+}
+#viewedlist{
+	padding: 15px 60px 15px 60px; 
+	background-color: rgb(220,220,220);
+}
+.viewed{
+	border: 1px solid rgb(220,220,220);;
+	background-color: transparent;
+	padding: 20px 0px 0px 20px;
+}
+.space{
+    border: 1px solid rgb(220,220,220);; 
+    background-color: #fff;
+}
+.down{
+	margin-bottom: 10px;
+}
+.buttonstyle{
+	background-color: #36a736; 
+	color: #fff; 
+	margin: 20px 0px 20px 0px; 
+	width: 50%;"
+}
+.right{
+	padding-right: 20px;
+}
+.text_size{
+	font-size: 1.4em;
+}
+.buttonwidth{
+	width: 70%
+}
+.imagesize{
+	max-width: 90%;
+}
+footer{
+	font-family: 'Zilla Slab', serif;
+}
+.caroucap{
+	margin-right: auto; 
+	position: absolute; 
+	top: 0px; 
+	width: 500px;
+	background-color: rgba(0,0,0, 0.6); 
+	left: 0px; 
+	height: 336px;
+}
+.caphead{
+	background-color: #0f0; 
+	color: #fff; 
+	width: 100px; 
+	padding: 5px;"
+}
+#login-form, #lost-password, #register-form{
+	background-color: #d0d3d4;
+}
+#div-login-msg,
+#div-lost-msg,
+#div-register-msg {
+    border: 1px solid  #aab7b8;
+    height: 30px;
+    line-height: 28px;
+    transition: all ease-in-out 500ms;
+}
+#icon-login-msg,
+#icon-lost-msg,
+#icon-register-msg {
+    width: 30px;
+    float: left;
+    line-height: 27px;
+    text-align: center;
+    background-color: #dadfe1;
+    margin-right: 5px;
+    transition: all ease-in-out 500ms;
+}
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px 15px 15px 15px;
+    border-bottom: 0px;
+    background-color: #34495e;
+	color: #fff;
+}
+.modal-body {
+    position: relative;
+    padding: 15px 15px 15px 15px;
+}
+.modal-footer {
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+    border-top: 0px;
+}
